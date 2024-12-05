@@ -1,5 +1,7 @@
 # All Pairs Shortest Paths
 
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice." 
+
 In the lectures, we've seen Dijkstra's algorithm for finding the shortest paths
 from a given vertex to all other vertices in the graph. We've also covered the
 Floyd-Warshall algorithm for finding the shortest path between all *pairs* of
@@ -28,3 +30,4 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+Because of the conversion code to allow for a basic graph input there is an additional $n^2$ time, so $\Theta(n^2 + n^3)$ or $\Theta(n^3)$ because the second part of the algorithm iterates over n 3 times for each vertex in order to determine shortest path for all vertices.
